@@ -1,18 +1,24 @@
+import java.io.InvalidClassException;
+
 public class Main {
-    public static int add(int a, int b){
-        return a+b;
+
+    public static void greet(){
+        System.out.println("Hello, world!");
     }
 
-    public static int add(int a, int b, int c){
-        return a + b + c;
+    public static void greet(String name){
+        System.out.println("Hello, " + name + "!");
     }
+
+    public static void greet(String name, int age){
+        System.out.println(name + "나이 : " + age);
+    }
+
+
 
     public static void main(String[] args) {
-        System.out.println("a + b = " + add(1,2));
-        System.out.println("a + b + c = " + add(3, 4, 5));
-
-        System.out.println(1);
-        System.out.println(1.1);
-        System.out.println("adc");
+        greet();
+        greet("Alice");
+        greet("Alice", 25);
     }
 }
