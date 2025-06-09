@@ -1,13 +1,11 @@
 public class Main {
     public static void main (String[] args){
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7};
+        int[] numbers = {2, 4, 6, 8, 10};
+        int sum=0;
 
-//      for (int i = 0; i < 5; i ++){
-//            System.out.println(numbers[i]);
-//        }
-
-        for (int i = numbers.length - 1; i > 0 ; i-- ){
-            System.out.println(i);
+        for(int i=0; i < numbers.length; i++){
+            sum += numbers[i];
         }
+        System.out.println("총합 : " + sum);
     }
 }
